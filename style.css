@@ -22,6 +22,19 @@ html{
 body {
     overflow-x: hidden;
 }
+.heding{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1.7rem;
+    color: #444;
+    margin: 2rem 0;
+    padding-top: 6rem;
+    text-decoration: underline;
+    text-decoration-style:solid;
+    text-decoration-color:#ff7a00;
+    text-underline-offset: 1.4rem;
+
+}
 
 .header{
     display: flex;
@@ -65,12 +78,13 @@ body {
 }
 
 .header .fa-bars{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     color: #666;
     cursor: pointer;
     display: none;
 
 }
+/*sessão home parte da foto*/
 
 .home .hero{
     min-height: 60vh;
@@ -100,6 +114,111 @@ body {
     margin-top: 1rem;
 
 }
+
+.home .counting{
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+.home .counting .box{
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+.home .counting .box .count{
+    font-size: 7rem;
+    color: #444;
+}
+
+.home .counting .box h3{
+    font-size: 2rem;
+    color: #ff7a00;
+}
+
+/*sessão sobre*/
+.about{
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+.about .image{
+    padding:2rem;
+}
+.about .image img{
+    height:45rem;
+    object-fit:cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem #ff7a00;
+} 
+
+.about .info{
+    padding: 2rem;
+    margin-top:3rem;
+}
+.about .info h2{
+    color: #ff7a00;
+    font-size: 4rem;
+}
+.about .info p{
+    font-size: 1.4rem;
+    color: #444;
+    margin:2rem 0;
+}
+
+.about .info .icons a{
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.about .info .icons a:hover{
+    background: #ff7a00;
+}
+/*parte de serviços*/
+.service{
+    min-height: 100vh;
+}
+.service .box-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    box-shadow:  0 .2rem .5rem rgba(0, 0, 0, .3);
+    border-left: .5rem solid #ff7a00;
+    border-right: .5rem solid #ff7a00;
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem 3rem;
+}
+
+.service .box-container .box .fas{
+    color: #ff7a00;
+    font-size: 5rem;
+}
+
+.service .box-container .box p{
+    color: #333;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+
+
+
 
 
 
@@ -163,7 +282,7 @@ body {
 }
 
 /*responsividade do home*/
-@media(max-width:768px){
+@media(max-width:400px){
     .home .hero .text1{
         font-size: 2.5rem;
         width: 35rem;

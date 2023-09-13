@@ -8,5 +8,24 @@ $(document).ready(function(){
     $(window).on('scroll load', function(){
         $('.fa-bars').removeClass('fa-times');
         $('nav').removeClass('nav-toogle');
+    });
+ // aqui embaixo faz a horas aumentarem ate chegar no momento 
+    $('.count').each(function(){
+        var $this = $(this),
+        countTo = $this.attr('data-count');
+        $({countNum : $this.text()}).animate({
+            countNum : countTo
+        },
+        {
+            duration:5000,
+            step : function(){
+                $this.text(Math.floor(this.countNum));
+            },
+            complete :function(){
+                $this.text(this.countNum + '+');
+            }
+        }
+
+        )
     })
 });
