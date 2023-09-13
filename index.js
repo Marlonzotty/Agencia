@@ -27,5 +27,14 @@ $(document).ready(function(){
         }
 
         )
-    })
+    });
+
+    $('.project').magnificPopup({
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+    });
+
 });

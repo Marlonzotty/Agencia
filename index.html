@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT_BR">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <title>Desing de Interiores</title>
     <link rel="stylesheet" href="./style.css">
    
 </head>
 <body>
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>PMN (soluções digitais)</h2>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </div>
     <!--header-->
     <header class="header fixed-top">
         <a href="#" class="logo"><img src="./img/logo.png.png" alt=""></a>
@@ -18,8 +26,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="./services.html">Serviços</a></li>
-                <li><a href="#Project">Projetos</a></li>
-                <li><a href="#home">Home</a></li>
+                <li><a href="./projects.html">Projetos</a></li>
+                <li><a href="#contact">contato</a></li>
             </ul>
         </nav>
         <div class="fas fa-bars"></div>
@@ -86,11 +94,87 @@
             </div>
     </section>
 
-   
+    <section id="contact" class="contact">
+        <h1 class="heding">Contato</h1>
+        <div class="contact-box-container mx-auto">
+            <div class="contact-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Belo Horinzonte, Brasil - Av. do gloria</h3>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <h3>DesingdeInterioresBH@gmail.com</h3>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <h3>+55(31) 99899-0809</h3>
+            </div>
+        </div>
+        <div class="form-container mx-auto">
+            <form id="myForm">
+                <div class="div inputBox">
+                    <input type="text" id="firstName" placeholder="first name">
+                    <input type="text" id="lastName" placeholder="last name">
+                </div>
+                <input type="email" id="email" placeholder="e-mail">
+                <textarea id="message" name="" id="" cols="30" rows="10">message</textarea>
+                <input type="submit" value="send">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer" class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#" class="logo"><img src="./img/logo.png.png" alt=""></a>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis similique repudiandae dolorum ad cumque repellat ex fuga soluta deserunt ipsum 
+                    quam rerum reprehenderit exercitationem facilis reiciendis voluptatum, odit doloribus!</p>
+            </div>
+           
+            <div class="col-md-3">
+                <h2>Our location</h2>
+                <div class="list">
+                    <a href="#">Belo Horizonte</a>
+                    <a href="#">Belo São Joao Del Rei</a>
+                    <a href="#">Tiradentes</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>Siga Nos Nas Redes</h2>
+                <div class="list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter </a>
+                    <a href="#">Instagram</a>
+                    <a href="#">pinterest</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center text-md-left letter">
+                <h2>Assine Agora nossa newsletter</h2>
+                <p>e fique por dentro da ultima moda</p>
+                <input type="email" placeholder="Entre com seu Email">
+                <input type="Submit" placeholder="">
+
+            </div>
+
+        </div>
+        
+        <h1 class="credit">Criado por <span>PMN (Soluções digitais)</span> || todos direitos reservados</h1>
+
+    </section>
     <!--jquery link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+    <script src="./form.js"></script>
+
+       <!--magnif-popup-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
+    <script src="./alert.js"></script>
+ 
     
 </body>
 </html>
